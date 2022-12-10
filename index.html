@@ -20,6 +20,7 @@
       type="image/x-icon"
       href="//img.escortsaffair.com/resources/img/favicon.ico"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <div>
@@ -27,13 +28,7 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col">
-              <button
-                class="sidebar-button"
-                onclick="showSidebar()"
-                data-cf-modified-14c6f4fb84c5c44921b18945-=""
-              >
-                ☰
-              </button>
+              <button class="sidebar-button" onclick="showSidebar()">☰</button>
               <a
                 class="logo-link mx-1"
                 href="//www.escortsaffair.com/centre/home"
@@ -69,11 +64,7 @@
           </div>
         </div>
       </header>
-      <div
-        class="sidebar-shadow"
-        onclick="if (!window.__cfRLUnblockHandlers) return false; hideSidebar()"
-        data-cf-modified-14c6f4fb84c5c44921b18945-=""
-      ></div>
+      <div class="sidebar-shadow" onclick="hideSidebar()"></div>
       <aside class="sidebar">
         <section class="m-3">
           <a
@@ -109,14 +100,16 @@
           <ul class="list-group sidebar-links"></ul>
         </section>
       </aside>
+
+      <!-- test -->
+
+      <!-- test -->
       <script>
         function toggleSidebar() {
           $(".sidebar").toggleClass("show");
           $(".sidebar-shadow").toggleClass("show");
         }
         function showSidebar() {
-          alert("hello");
-
           $(".sidebar").addClass("show");
           $(".sidebar-shadow").addClass("show");
         }
